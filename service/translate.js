@@ -6,6 +6,7 @@ const translateURL = 'https://translation.googleapis.com/language/translate/v2?k
 
 var translate = {
    find: function(req, res, next) {
+       res.header("Access-Control-Allow-Origin", "*");
        request(translateURL + apiKey 
                + '&q=' + req.params.text + '&source=' 
                + req.params.fromLang + '&target='
