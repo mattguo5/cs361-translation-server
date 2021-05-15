@@ -1,0 +1,17 @@
+{
+  "name": "server",
+  "version": "1.0.0",
+  "description": "translate microservice",
+  "main": "server.js",
+  "scripts": {
+    "test": "test"
+  },
+  "author": "Matthew Guo",
+  "license": "MIT",
+  "dependencies": {
+    "dotenv": "^9.0.2",
+    "express": "^4.17.1",
+    "request": "^2.88.2"
+  },
+  "start": "node server.js"
+}
