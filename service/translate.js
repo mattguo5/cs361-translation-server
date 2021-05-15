@@ -19,7 +19,7 @@ var translate = {
                console.log(req.params.text);
                console.log(req.params.fromLang);
                console.log(req.params.targetLang);
-               res.send({translate: -1});
+               res.send({"data":{"translations":[{"translatedText": -1}]}});
            }
        });
 
