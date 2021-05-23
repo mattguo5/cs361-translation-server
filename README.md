@@ -11,35 +11,43 @@ https://frozen-journey-96381.herokuapp.com/translate/en/el/Hello World
 
 Version 1.0.0 POST usage:
 Send a POST request to {url}/translate
+```
 POST data contents:
     {
         text: text_to_translate,
         fromLang: initial_language,
         targetLang: target_language
     }
+```
 POST body type: application/x-www-form-url-encoded
 
 POST Example:
 https://frozen-journey-96381.herokuapp.com/translate
+```
 POST contents:
     {
         text: Hello World,
         fromLang: en,
         targetLang: el
     }
+```
 - This will translate "Hello World" from English to Greek
 
 Response:
 Upon a successful response, a response package will be given as such:
+```
 "data": {
     "translations": [
         "translatedText": "Hello World"
     ]
 }
+```
 
 Upon an unsuccessful response, a response package will be given as such:
+```
 "data": {
     "translations": [
         "translatedText": -1
     ]
 }
+```
