@@ -1,15 +1,15 @@
-Google Translate Microservice
+#Google Translate Microservice
 
 Deployed on Heroku: https://frozen-journey-96381.herokuapp.com
 
-Version 1.0.0 GET usage:
+##Version 1.0.0 GET usage:<br/>
 {url}/translate/initial_language/target_language/text_to_translate
 
-GET Example:
+###GET Example:<br/>
 https://frozen-journey-96381.herokuapp.com/translate/en/el/Hello World
 - This will translate "Hello World" from English to Greek
 
-Version 1.0.0 POST usage:
+##Version 1.0.0 POST usage:<br/>
 Send a POST request to {url}/translate
 ```
 POST data contents:
@@ -21,7 +21,7 @@ POST data contents:
 ```
 POST body type: application/x-www-form-url-encoded
 
-POST Example:
+###POST Example:<br/>
 https://frozen-journey-96381.herokuapp.com/translate
 ```
 POST contents:
@@ -33,7 +33,7 @@ POST contents:
 ```
 - This will translate "Hello World" from English to Greek
 
-Response:
+##Response:<br/>
 Upon a successful response, a response package will be given as such:
 ```
 "data": {
