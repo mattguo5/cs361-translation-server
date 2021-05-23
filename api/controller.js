@@ -2,6 +2,7 @@
 
 var properties = require('../package.json')
 var distance = require('../service/translate');
+var postReq = require('../service/translatePost');
 
 var controllers = {
    about: function(req, res) {
@@ -18,6 +19,13 @@ var controllers = {
                res.json(dist);
            });
        },
+    getPost: function(req, res) {
+            postReq.find(req, res, function(err, dist) {
+                if (err)
+                    res.send(err);
+                res.json(dist);
+            });
+    }
 };
 
 module.exports = controllers;

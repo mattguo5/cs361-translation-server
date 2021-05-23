@@ -7,4 +7,6 @@ module.exports = function(app) {
        .get(controller.about);
    app.route('/translate/:fromLang/:targetLang/:text')
        .get(controller.getTranslate);
+    app.route('/translate')
+       .post(controller.getPost);
 };
