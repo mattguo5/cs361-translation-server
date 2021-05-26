@@ -9,4 +9,6 @@ module.exports = function(app) {
        .get(controller.getTranslate);
     app.route('/translate')
        .post(controller.getPost);
+    app.route('/languages')
+        .get(controller.getLanguages);
 };

@@ -3,6 +3,7 @@
 var properties = require('../package.json')
 var distance = require('../service/translate');
 var postReq = require('../service/translatePost');
+var googleTranslate = require('../utils/googleTranslate');
 
 var controllers = {
    about: function(req, res) {
@@ -25,6 +26,13 @@ var controllers = {
                     res.send(err);
                 res.json(dist);
             });
+    },
+    getLanguages: function(req, res) {
+        googleTranslate.getSupportedLanguages("en", function(err, languageCodes){
+            // supportedLanguages = JSON.stringify(languageCodes);
+            res.json(languageCodes);
+        });
+        
     }
 };
 
