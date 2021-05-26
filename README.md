@@ -57,3 +57,28 @@ Upon an unsuccessful response, a response package will be given as such:
     ]
 }
 ```
+
+## Getting Language Support:<br/>
+Make a GET call to:
+```
+https://frozen-journey-96381.herokuapp.com/languages
+```
+This will send back an Array of JSONs with the language codes and the name of the languages.
+```
+[
+    {
+        language: "af",
+        name: "Afrikaans"
+    },
+    {
+        language: "sq",
+        name: "Albanian"
+    },
+    {
+        language: "am",
+        name: "Amharic"
+    }
+    ...
+]
+```
+These language codes will be used for the GET and POST translation methods as described above.
